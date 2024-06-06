@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
     return (
       <nav className="bg-white shadow-md">
@@ -10,30 +12,30 @@ const Navbar = () => {
                 </a>
               </div>
               <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                <a
-                  href="#"
+                <Link
+                  to='/livescore'
                   className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 hover:border-indigo-500 text-sm font-medium"
                 >
                   Live Scores
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to="/matchschedule"
                   className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 hover:border-indigo-500 text-sm font-medium"
                 >
                   Schedule
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to="/pointstable"
                   className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 hover:border-indigo-500 text-sm font-medium"
                 >
                   Point Table
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to="/statistics"
                   className="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 hover:border-indigo-500 text-sm font-medium"
                 >
                   Statistics
-                </a>
+                </Link>
               </div>
             </div>
             <div className="flex items-center">
